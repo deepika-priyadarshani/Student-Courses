@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Selection
+Partial Class SelectionForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -66,7 +66,7 @@ Partial Class Selection
         Me.cmdExit.Text = "Exit"
         Me.cmdExit.UseVisualStyleBackColor = True
         '
-        'Form1
+        'SelectionForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -75,7 +75,7 @@ Partial Class Selection
         Me.Controls.Add(Me.cmdOK)
         Me.Controls.Add(Me.ComboName)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "Form1"
+        Me.Name = "SelectionForm"
         Me.Text = "Selection Form"
         Me.ResumeLayout(False)
         Me.PerformLayout()
