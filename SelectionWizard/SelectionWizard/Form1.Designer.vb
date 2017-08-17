@@ -56,7 +56,7 @@ Partial Class Login
         Me.Label3.Location = New System.Drawing.Point(19, 105)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(53, 13)
-        Me.Label3.TabIndex = 2
+        Me.Label3.TabIndex = 3
         Me.Label3.Text = "Password"
         '
         'cmdOK
@@ -64,7 +64,7 @@ Partial Class Login
         Me.cmdOK.Location = New System.Drawing.Point(54, 135)
         Me.cmdOK.Name = "cmdOK"
         Me.cmdOK.Size = New System.Drawing.Size(75, 23)
-        Me.cmdOK.TabIndex = 3
+        Me.cmdOK.TabIndex = 5
         Me.cmdOK.Text = "OK"
         Me.cmdOK.UseVisualStyleBackColor = True
         '
@@ -73,7 +73,7 @@ Partial Class Login
         Me.cmdCancel.Location = New System.Drawing.Point(173, 135)
         Me.cmdCancel.Name = "cmdCancel"
         Me.cmdCancel.Size = New System.Drawing.Size(75, 23)
-        Me.cmdCancel.TabIndex = 4
+        Me.cmdCancel.TabIndex = 6
         Me.cmdCancel.Text = "Cancel"
         Me.cmdCancel.UseVisualStyleBackColor = True
         '
@@ -82,14 +82,14 @@ Partial Class Login
         Me.txtUserName.Location = New System.Drawing.Point(100, 73)
         Me.txtUserName.Name = "txtUserName"
         Me.txtUserName.Size = New System.Drawing.Size(100, 20)
-        Me.txtUserName.TabIndex = 5
+        Me.txtUserName.TabIndex = 2
         '
         'txtPassword
         '
         Me.txtPassword.Location = New System.Drawing.Point(100, 105)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(100, 20)
-        Me.txtPassword.TabIndex = 6
+        Me.txtPassword.TabIndex = 4
         '
         'Login
         '
