@@ -70,7 +70,7 @@ Partial Class SelectionForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(279, 202)
+        Me.ClientSize = New System.Drawing.Size(357, 202)
         Me.Controls.Add(Me.cmdExit)
         Me.Controls.Add(Me.cmdOK)
         Me.Controls.Add(Me.ComboName)
