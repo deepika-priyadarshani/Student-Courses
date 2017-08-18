@@ -42,19 +42,26 @@ Partial Class Course
         Me.txtClassroom = New System.Windows.Forms.TextBox()
         Me.txtEnrolments = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.txtCourseEnrolments = New System.Windows.Forms.TextBox()
+        Me.txtCourseClassroom = New System.Windows.Forms.TextBox()
+        Me.txtCourseCredits = New System.Windows.Forms.TextBox()
+        Me.txtCourseSchedule = New System.Windows.Forms.TextBox()
+        Me.txtCourseName = New System.Windows.Forms.TextBox()
+        Me.txtCourseID = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.CourseList = New System.Windows.Forms.ListBox()
+        Me.cmdSelect = New System.Windows.Forms.Button()
+        Me.cmdInsert = New System.Windows.Forms.Button()
+        Me.cmdUpdate = New System.Windows.Forms.Button()
+        Me.cmdDelete = New System.Windows.Forms.Button()
+        Me.cmdBack = New System.Windows.Forms.Button()
         Me.NameBox.SuspendLayout()
+        Me.CourseBox.SuspendLayout()
         Me.CourseInfoBox.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -74,9 +81,10 @@ Partial Class Course
         '
         'CourseBox
         '
+        Me.CourseBox.Controls.Add(Me.CourseList)
         Me.CourseBox.Location = New System.Drawing.Point(12, 151)
         Me.CourseBox.Name = "CourseBox"
-        Me.CourseBox.Size = New System.Drawing.Size(227, 197)
+        Me.CourseBox.Size = New System.Drawing.Size(227, 221)
         Me.CourseBox.TabIndex = 1
         Me.CourseBox.TabStop = False
         Me.CourseBox.Text = "Course List"
@@ -234,12 +242,12 @@ Partial Class Course
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
+        Me.GroupBox1.Controls.Add(Me.txtCourseEnrolments)
+        Me.GroupBox1.Controls.Add(Me.txtCourseClassroom)
+        Me.GroupBox1.Controls.Add(Me.txtCourseCredits)
+        Me.GroupBox1.Controls.Add(Me.txtCourseSchedule)
+        Me.GroupBox1.Controls.Add(Me.txtCourseName)
+        Me.GroupBox1.Controls.Add(Me.txtCourseID)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.Label11)
@@ -253,47 +261,47 @@ Partial Class Course
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Course Information"
         '
-        'TextBox1
+        'txtCourseEnrolments
         '
-        Me.TextBox1.Location = New System.Drawing.Point(131, 168)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(274, 20)
-        Me.TextBox1.TabIndex = 12
+        Me.txtCourseEnrolments.Location = New System.Drawing.Point(131, 168)
+        Me.txtCourseEnrolments.Name = "txtCourseEnrolments"
+        Me.txtCourseEnrolments.Size = New System.Drawing.Size(274, 20)
+        Me.txtCourseEnrolments.TabIndex = 12
         '
-        'TextBox2
+        'txtCourseClassroom
         '
-        Me.TextBox2.Location = New System.Drawing.Point(131, 109)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(274, 20)
-        Me.TextBox2.TabIndex = 11
+        Me.txtCourseClassroom.Location = New System.Drawing.Point(131, 109)
+        Me.txtCourseClassroom.Name = "txtCourseClassroom"
+        Me.txtCourseClassroom.Size = New System.Drawing.Size(274, 20)
+        Me.txtCourseClassroom.TabIndex = 11
         '
-        'TextBox3
+        'txtCourseCredits
         '
-        Me.TextBox3.Location = New System.Drawing.Point(131, 138)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(274, 20)
-        Me.TextBox3.TabIndex = 10
+        Me.txtCourseCredits.Location = New System.Drawing.Point(131, 138)
+        Me.txtCourseCredits.Name = "txtCourseCredits"
+        Me.txtCourseCredits.Size = New System.Drawing.Size(274, 20)
+        Me.txtCourseCredits.TabIndex = 10
         '
-        'TextBox4
+        'txtCourseSchedule
         '
-        Me.TextBox4.Location = New System.Drawing.Point(131, 79)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(274, 20)
-        Me.TextBox4.TabIndex = 9
+        Me.txtCourseSchedule.Location = New System.Drawing.Point(131, 79)
+        Me.txtCourseSchedule.Name = "txtCourseSchedule"
+        Me.txtCourseSchedule.Size = New System.Drawing.Size(274, 20)
+        Me.txtCourseSchedule.TabIndex = 9
         '
-        'TextBox5
+        'txtCourseName
         '
-        Me.TextBox5.Location = New System.Drawing.Point(131, 49)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(274, 20)
-        Me.TextBox5.TabIndex = 8
+        Me.txtCourseName.Location = New System.Drawing.Point(131, 49)
+        Me.txtCourseName.Name = "txtCourseName"
+        Me.txtCourseName.Size = New System.Drawing.Size(274, 20)
+        Me.txtCourseName.TabIndex = 8
         '
-        'TextBox6
+        'txtCourseID
         '
-        Me.TextBox6.Location = New System.Drawing.Point(131, 19)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(274, 20)
-        Me.TextBox6.TabIndex = 7
+        Me.txtCourseID.Location = New System.Drawing.Point(131, 19)
+        Me.txtCourseID.Name = "txtCourseID"
+        Me.txtCourseID.Size = New System.Drawing.Size(274, 20)
+        Me.txtCourseID.TabIndex = 7
         '
         'Label9
         '
@@ -349,19 +357,80 @@ Partial Class Course
         Me.Label14.TabIndex = 0
         Me.Label14.Text = "Course ID : "
         '
+        'CourseList
+        '
+        Me.CourseList.FormattingEnabled = True
+        Me.CourseList.Location = New System.Drawing.Point(13, 22)
+        Me.CourseList.Name = "CourseList"
+        Me.CourseList.Size = New System.Drawing.Size(204, 186)
+        Me.CourseList.TabIndex = 0
+        '
+        'cmdSelect
+        '
+        Me.cmdSelect.Location = New System.Drawing.Point(13, 393)
+        Me.cmdSelect.Name = "cmdSelect"
+        Me.cmdSelect.Size = New System.Drawing.Size(75, 23)
+        Me.cmdSelect.TabIndex = 3
+        Me.cmdSelect.Text = "Select"
+        Me.cmdSelect.UseVisualStyleBackColor = True
+        '
+        'cmdInsert
+        '
+        Me.cmdInsert.Location = New System.Drawing.Point(150, 393)
+        Me.cmdInsert.Name = "cmdInsert"
+        Me.cmdInsert.Size = New System.Drawing.Size(75, 23)
+        Me.cmdInsert.TabIndex = 4
+        Me.cmdInsert.Text = "Insert"
+        Me.cmdInsert.UseVisualStyleBackColor = True
+        '
+        'cmdUpdate
+        '
+        Me.cmdUpdate.Location = New System.Drawing.Point(287, 393)
+        Me.cmdUpdate.Name = "cmdUpdate"
+        Me.cmdUpdate.Size = New System.Drawing.Size(75, 23)
+        Me.cmdUpdate.TabIndex = 5
+        Me.cmdUpdate.Text = "Update"
+        Me.cmdUpdate.UseVisualStyleBackColor = True
+        '
+        'cmdDelete
+        '
+        Me.cmdDelete.Location = New System.Drawing.Point(424, 393)
+        Me.cmdDelete.Name = "cmdDelete"
+        Me.cmdDelete.Size = New System.Drawing.Size(75, 23)
+        Me.cmdDelete.TabIndex = 6
+        Me.cmdDelete.Text = "Delete"
+        Me.cmdDelete.UseVisualStyleBackColor = True
+        '
+        'cmdBack
+        '
+        Me.cmdBack.Location = New System.Drawing.Point(561, 393)
+        Me.cmdBack.Name = "cmdBack"
+        Me.cmdBack.Size = New System.Drawing.Size(136, 23)
+        Me.cmdBack.TabIndex = 7
+        Me.cmdBack.Text = "Back to Main Menu"
+        Me.cmdBack.UseVisualStyleBackColor = True
+        '
         'Course
         '
+        Me.AcceptButton = Me.cmdSelect
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(726, 491)
+        Me.ClientSize = New System.Drawing.Size(726, 448)
+        Me.Controls.Add(Me.cmdBack)
+        Me.Controls.Add(Me.cmdDelete)
+        Me.Controls.Add(Me.cmdUpdate)
+        Me.Controls.Add(Me.cmdInsert)
+        Me.Controls.Add(Me.cmdSelect)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.CourseInfoBox)
         Me.Controls.Add(Me.CourseBox)
         Me.Controls.Add(Me.NameBox)
         Me.Name = "Course"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "CSE DEPT Course Form"
         Me.NameBox.ResumeLayout(False)
         Me.NameBox.PerformLayout()
+        Me.CourseBox.ResumeLayout(False)
         Me.CourseInfoBox.ResumeLayout(False)
         Me.CourseInfoBox.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
@@ -390,16 +459,22 @@ Partial Class Course
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents txtCourseEnrolments As TextBox
+    Friend WithEvents txtCourseClassroom As TextBox
+    Friend WithEvents txtCourseCredits As TextBox
+    Friend WithEvents txtCourseSchedule As TextBox
+    Friend WithEvents txtCourseName As TextBox
+    Friend WithEvents txtCourseID As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Label14 As Label
+    Friend WithEvents CourseList As ListBox
+    Friend WithEvents cmdSelect As Button
+    Friend WithEvents cmdInsert As Button
+    Friend WithEvents cmdUpdate As Button
+    Friend WithEvents cmdDelete As Button
+    Friend WithEvents cmdBack As Button
 End Class
