@@ -83,9 +83,9 @@ Partial Class StudentForm
         Me.StudentInfoBox.Controls.Add(Me.Label5)
         Me.StudentInfoBox.Controls.Add(Me.Label4)
         Me.StudentInfoBox.Controls.Add(Me.Label3)
-        Me.StudentInfoBox.Location = New System.Drawing.Point(349, 165)
+        Me.StudentInfoBox.Location = New System.Drawing.Point(359, 177)
         Me.StudentInfoBox.Name = "StudentInfoBox"
-        Me.StudentInfoBox.Size = New System.Drawing.Size(316, 226)
+        Me.StudentInfoBox.Size = New System.Drawing.Size(316, 238)
         Me.StudentInfoBox.TabIndex = 1
         Me.StudentInfoBox.TabStop = False
         Me.StudentInfoBox.Text = "Student Information"
@@ -95,7 +95,7 @@ Partial Class StudentForm
         Me.CourseSelectedBox.Controls.Add(Me.CourseList)
         Me.CourseSelectedBox.Location = New System.Drawing.Point(369, 44)
         Me.CourseSelectedBox.Name = "CourseSelectedBox"
-        Me.CourseSelectedBox.Size = New System.Drawing.Size(200, 100)
+        Me.CourseSelectedBox.Size = New System.Drawing.Size(296, 127)
         Me.CourseSelectedBox.TabIndex = 1
         Me.CourseSelectedBox.TabStop = False
         Me.CourseSelectedBox.Text = "Course Selected"
@@ -103,7 +103,7 @@ Partial Class StudentForm
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(7, 20)
+        Me.Label1.Location = New System.Drawing.Point(7, 24)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(75, 13)
         Me.Label1.TabIndex = 0
@@ -112,7 +112,7 @@ Partial Class StudentForm
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(10, 51)
+        Me.Label2.Location = New System.Drawing.Point(10, 58)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(74, 13)
         Me.Label2.TabIndex = 1
@@ -121,17 +121,17 @@ Partial Class StudentForm
         'ComboName
         '
         Me.ComboName.FormattingEnabled = True
-        Me.ComboName.Location = New System.Drawing.Point(68, 20)
+        Me.ComboName.Location = New System.Drawing.Point(134, 20)
         Me.ComboName.Name = "ComboName"
-        Me.ComboName.Size = New System.Drawing.Size(121, 21)
+        Me.ComboName.Size = New System.Drawing.Size(172, 21)
         Me.ComboName.TabIndex = 2
         '
         'ComboMethod
         '
         Me.ComboMethod.FormattingEnabled = True
-        Me.ComboMethod.Location = New System.Drawing.Point(68, 51)
+        Me.ComboMethod.Location = New System.Drawing.Point(134, 54)
         Me.ComboMethod.Name = "ComboMethod"
-        Me.ComboMethod.Size = New System.Drawing.Size(121, 21)
+        Me.ComboMethod.Size = New System.Drawing.Size(172, 21)
         Me.ComboMethod.TabIndex = 3
         '
         'CourseList
@@ -139,7 +139,7 @@ Partial Class StudentForm
         Me.CourseList.FormattingEnabled = True
         Me.CourseList.Location = New System.Drawing.Point(6, 19)
         Me.CourseList.Name = "CourseList"
-        Me.CourseList.Size = New System.Drawing.Size(120, 56)
+        Me.CourseList.Size = New System.Drawing.Size(284, 95)
         Me.CourseList.TabIndex = 0
         '
         'Label3
@@ -172,7 +172,7 @@ Partial Class StudentForm
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(7, 130)
+        Me.Label6.Location = New System.Drawing.Point(7, 136)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(39, 13)
         Me.Label6.TabIndex = 3
@@ -190,7 +190,7 @@ Partial Class StudentForm
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(7, 156)
+        Me.Label8.Location = New System.Drawing.Point(7, 166)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(45, 13)
         Me.Label8.TabIndex = 5
@@ -199,7 +199,7 @@ Partial Class StudentForm
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(7, 178)
+        Me.Label9.Location = New System.Drawing.Point(7, 196)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(38, 13)
         Me.Label9.TabIndex = 6
@@ -207,49 +207,49 @@ Partial Class StudentForm
         '
         'txtID
         '
-        Me.txtID.Location = New System.Drawing.Point(98, 20)
+        Me.txtID.Location = New System.Drawing.Point(98, 13)
         Me.txtID.Name = "txtID"
         Me.txtID.Size = New System.Drawing.Size(212, 20)
         Me.txtID.TabIndex = 7
         '
         'txtName
         '
-        Me.txtName.Location = New System.Drawing.Point(98, 46)
+        Me.txtName.Location = New System.Drawing.Point(98, 43)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(212, 20)
         Me.txtName.TabIndex = 8
         '
         'txtYear
         '
-        Me.txtYear.Location = New System.Drawing.Point(98, 78)
+        Me.txtYear.Location = New System.Drawing.Point(98, 73)
         Me.txtYear.Name = "txtYear"
         Me.txtYear.Size = New System.Drawing.Size(212, 20)
         Me.txtYear.TabIndex = 9
         '
         'txtGPA
         '
-        Me.txtGPA.Location = New System.Drawing.Point(104, 101)
+        Me.txtGPA.Location = New System.Drawing.Point(98, 103)
         Me.txtGPA.Name = "txtGPA"
         Me.txtGPA.Size = New System.Drawing.Size(212, 20)
         Me.txtGPA.TabIndex = 10
         '
         'txtMajor
         '
-        Me.txtMajor.Location = New System.Drawing.Point(104, 123)
+        Me.txtMajor.Location = New System.Drawing.Point(98, 133)
         Me.txtMajor.Name = "txtMajor"
         Me.txtMajor.Size = New System.Drawing.Size(212, 20)
         Me.txtMajor.TabIndex = 11
         '
         'txtCredits
         '
-        Me.txtCredits.Location = New System.Drawing.Point(98, 149)
+        Me.txtCredits.Location = New System.Drawing.Point(98, 163)
         Me.txtCredits.Name = "txtCredits"
         Me.txtCredits.Size = New System.Drawing.Size(212, 20)
         Me.txtCredits.TabIndex = 12
         '
         'txtEmail
         '
-        Me.txtEmail.Location = New System.Drawing.Point(104, 175)
+        Me.txtEmail.Location = New System.Drawing.Point(98, 193)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(212, 20)
         Me.txtEmail.TabIndex = 13
