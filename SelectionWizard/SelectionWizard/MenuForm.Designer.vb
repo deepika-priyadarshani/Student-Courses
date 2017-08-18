@@ -31,7 +31,7 @@ Partial Class MenuForm
         '
         'cmdOpenFacultyForm
         '
-        Me.cmdOpenFacultyForm.Location = New System.Drawing.Point(79, 55)
+        Me.cmdOpenFacultyForm.Location = New System.Drawing.Point(94, 55)
         Me.cmdOpenFacultyForm.Name = "cmdOpenFacultyForm"
         Me.cmdOpenFacultyForm.Size = New System.Drawing.Size(75, 23)
         Me.cmdOpenFacultyForm.TabIndex = 0
@@ -40,7 +40,7 @@ Partial Class MenuForm
         '
         'cmdOpenCourseForm
         '
-        Me.cmdOpenCourseForm.Location = New System.Drawing.Point(79, 106)
+        Me.cmdOpenCourseForm.Location = New System.Drawing.Point(94, 95)
         Me.cmdOpenCourseForm.Name = "cmdOpenCourseForm"
         Me.cmdOpenCourseForm.Size = New System.Drawing.Size(75, 23)
         Me.cmdOpenCourseForm.TabIndex = 1
@@ -49,7 +49,7 @@ Partial Class MenuForm
         '
         'cmdOpenStudentsForm
         '
-        Me.cmdOpenStudentsForm.Location = New System.Drawing.Point(79, 135)
+        Me.cmdOpenStudentsForm.Location = New System.Drawing.Point(94, 135)
         Me.cmdOpenStudentsForm.Name = "cmdOpenStudentsForm"
         Me.cmdOpenStudentsForm.Size = New System.Drawing.Size(75, 23)
         Me.cmdOpenStudentsForm.TabIndex = 2
@@ -58,7 +58,7 @@ Partial Class MenuForm
         '
         'cmdExitApplication
         '
-        Me.cmdExitApplication.Location = New System.Drawing.Point(79, 177)
+        Me.cmdExitApplication.Location = New System.Drawing.Point(94, 175)
         Me.cmdExitApplication.Name = "cmdExitApplication"
         Me.cmdExitApplication.Size = New System.Drawing.Size(75, 23)
         Me.cmdExitApplication.TabIndex = 3
@@ -68,9 +68,10 @@ Partial Class MenuForm
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(55, 13)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(12, 19)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(158, 13)
+        Me.Label1.Size = New System.Drawing.Size(236, 20)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Click a Button to Open the Form"
         '
