@@ -90,6 +90,12 @@
     <Compile Include="Course.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MenuForm.Designer.vb">
+      <DependentUpon>MenuForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Selection.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Course.resx">
       <DependentUpon>Course.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm.resx">
+      <DependentUpon>MenuForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Selection.resx">
       <DependentUpon>Selection.vb</DependentUpon>
