@@ -23,24 +23,25 @@ Partial Class Course
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.NameBox = New System.Windows.Forms.GroupBox()
-        Me.CourseBox = New System.Windows.Forms.GroupBox()
-        Me.CourseInfoBox = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.ComboName = New System.Windows.Forms.ComboBox()
         Me.ComboMethod = New System.Windows.Forms.ComboBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.txtID = New System.Windows.Forms.TextBox()
-        Me.txtCourse = New System.Windows.Forms.TextBox()
-        Me.txtSchedule = New System.Windows.Forms.TextBox()
-        Me.txtCredits = New System.Windows.Forms.TextBox()
-        Me.txtClassroom = New System.Windows.Forms.TextBox()
+        Me.ComboName = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.CourseBox = New System.Windows.Forms.GroupBox()
+        Me.CourseList = New System.Windows.Forms.ListBox()
+        Me.CourseInfoBox = New System.Windows.Forms.GroupBox()
         Me.txtEnrolments = New System.Windows.Forms.TextBox()
+        Me.txtClassroom = New System.Windows.Forms.TextBox()
+        Me.txtCredits = New System.Windows.Forms.TextBox()
+        Me.txtSchedule = New System.Windows.Forms.TextBox()
+        Me.txtCourse = New System.Windows.Forms.TextBox()
+        Me.txtID = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtCourseEnrolments = New System.Windows.Forms.TextBox()
         Me.txtCourseClassroom = New System.Windows.Forms.TextBox()
@@ -54,7 +55,6 @@ Partial Class Course
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.CourseList = New System.Windows.Forms.ListBox()
         Me.cmdSelect = New System.Windows.Forms.Button()
         Me.cmdInsert = New System.Windows.Forms.Button()
         Me.cmdUpdate = New System.Windows.Forms.Button()
@@ -79,6 +79,40 @@ Partial Class Course
         Me.NameBox.TabStop = False
         Me.NameBox.Text = "Faculty Name and Query Method"
         '
+        'ComboMethod
+        '
+        Me.ComboMethod.FormattingEnabled = True
+        Me.ComboMethod.Location = New System.Drawing.Point(150, 57)
+        Me.ComboMethod.Name = "ComboMethod"
+        Me.ComboMethod.Size = New System.Drawing.Size(347, 21)
+        Me.ComboMethod.TabIndex = 3
+        '
+        'ComboName
+        '
+        Me.ComboName.FormattingEnabled = True
+        Me.ComboName.Location = New System.Drawing.Point(150, 20)
+        Me.ComboName.Name = "ComboName"
+        Me.ComboName.Size = New System.Drawing.Size(347, 21)
+        Me.ComboName.TabIndex = 2
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(7, 61)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(83, 13)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Query Method : "
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(7, 24)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(81, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Faculty Name : "
+        '
         'CourseBox
         '
         Me.CourseBox.Controls.Add(Me.CourseList)
@@ -88,6 +122,14 @@ Partial Class Course
         Me.CourseBox.TabIndex = 1
         Me.CourseBox.TabStop = False
         Me.CourseBox.Text = "Course List"
+        '
+        'CourseList
+        '
+        Me.CourseList.FormattingEnabled = True
+        Me.CourseList.Location = New System.Drawing.Point(13, 22)
+        Me.CourseList.Name = "CourseList"
+        Me.CourseList.Size = New System.Drawing.Size(204, 186)
+        Me.CourseList.TabIndex = 0
         '
         'CourseInfoBox
         '
@@ -110,84 +152,47 @@ Partial Class Course
         Me.CourseInfoBox.TabStop = False
         Me.CourseInfoBox.Text = "Course Information"
         '
-        'Label1
+        'txtEnrolments
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(7, 24)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(81, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Faculty Name : "
+        Me.txtEnrolments.Location = New System.Drawing.Point(131, 171)
+        Me.txtEnrolments.Name = "txtEnrolments"
+        Me.txtEnrolments.Size = New System.Drawing.Size(239, 20)
+        Me.txtEnrolments.TabIndex = 12
         '
-        'Label2
+        'txtClassroom
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(7, 61)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(83, 13)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Query Method : "
+        Me.txtClassroom.Location = New System.Drawing.Point(131, 118)
+        Me.txtClassroom.Name = "txtClassroom"
+        Me.txtClassroom.Size = New System.Drawing.Size(239, 20)
+        Me.txtClassroom.TabIndex = 11
         '
-        'ComboName
+        'txtCredits
         '
-        Me.ComboName.FormattingEnabled = True
-        Me.ComboName.Location = New System.Drawing.Point(150, 20)
-        Me.ComboName.Name = "ComboName"
-        Me.ComboName.Size = New System.Drawing.Size(347, 21)
-        Me.ComboName.TabIndex = 2
+        Me.txtCredits.Location = New System.Drawing.Point(136, 144)
+        Me.txtCredits.Name = "txtCredits"
+        Me.txtCredits.Size = New System.Drawing.Size(239, 20)
+        Me.txtCredits.TabIndex = 10
         '
-        'ComboMethod
+        'txtSchedule
         '
-        Me.ComboMethod.FormattingEnabled = True
-        Me.ComboMethod.Location = New System.Drawing.Point(150, 57)
-        Me.ComboMethod.Name = "ComboMethod"
-        Me.ComboMethod.Size = New System.Drawing.Size(347, 21)
-        Me.ComboMethod.TabIndex = 3
+        Me.txtSchedule.Location = New System.Drawing.Point(136, 89)
+        Me.txtSchedule.Name = "txtSchedule"
+        Me.txtSchedule.Size = New System.Drawing.Size(239, 20)
+        Me.txtSchedule.TabIndex = 9
         '
-        'Label3
+        'txtCourse
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(26, 43)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(63, 13)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Course ID : "
+        Me.txtCourse.Location = New System.Drawing.Point(136, 58)
+        Me.txtCourse.Name = "txtCourse"
+        Me.txtCourse.Size = New System.Drawing.Size(239, 20)
+        Me.txtCourse.TabIndex = 8
         '
-        'Label4
+        'txtID
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(26, 71)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(46, 13)
-        Me.Label4.TabIndex = 1
-        Me.Label4.Text = "Course :"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(26, 95)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(58, 13)
-        Me.Label5.TabIndex = 2
-        Me.Label5.Text = "Schedule :"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(26, 159)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(45, 13)
-        Me.Label6.TabIndex = 3
-        Me.Label6.Text = "Credits :"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(26, 120)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(61, 13)
-        Me.Label7.TabIndex = 4
-        Me.Label7.Text = "Classroom :"
+        Me.txtID.Location = New System.Drawing.Point(131, 19)
+        Me.txtID.Name = "txtID"
+        Me.txtID.Size = New System.Drawing.Size(274, 20)
+        Me.txtID.TabIndex = 7
         '
         'Label8
         '
@@ -198,47 +203,50 @@ Partial Class Course
         Me.Label8.TabIndex = 5
         Me.Label8.Text = "Enrolments :"
         '
-        'txtID
+        'Label7
         '
-        Me.txtID.Location = New System.Drawing.Point(131, 19)
-        Me.txtID.Name = "txtID"
-        Me.txtID.Size = New System.Drawing.Size(274, 20)
-        Me.txtID.TabIndex = 7
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(26, 120)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(61, 13)
+        Me.Label7.TabIndex = 4
+        Me.Label7.Text = "Classroom :"
         '
-        'txtCourse
+        'Label6
         '
-        Me.txtCourse.Location = New System.Drawing.Point(136, 58)
-        Me.txtCourse.Name = "txtCourse"
-        Me.txtCourse.Size = New System.Drawing.Size(239, 20)
-        Me.txtCourse.TabIndex = 8
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(26, 159)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(45, 13)
+        Me.Label6.TabIndex = 3
+        Me.Label6.Text = "Credits :"
         '
-        'txtSchedule
+        'Label5
         '
-        Me.txtSchedule.Location = New System.Drawing.Point(136, 89)
-        Me.txtSchedule.Name = "txtSchedule"
-        Me.txtSchedule.Size = New System.Drawing.Size(239, 20)
-        Me.txtSchedule.TabIndex = 9
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(26, 95)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(58, 13)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = "Schedule :"
         '
-        'txtCredits
+        'Label4
         '
-        Me.txtCredits.Location = New System.Drawing.Point(136, 144)
-        Me.txtCredits.Name = "txtCredits"
-        Me.txtCredits.Size = New System.Drawing.Size(239, 20)
-        Me.txtCredits.TabIndex = 10
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(26, 71)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(46, 13)
+        Me.Label4.TabIndex = 1
+        Me.Label4.Text = "Course :"
         '
-        'txtClassroom
+        'Label3
         '
-        Me.txtClassroom.Location = New System.Drawing.Point(131, 118)
-        Me.txtClassroom.Name = "txtClassroom"
-        Me.txtClassroom.Size = New System.Drawing.Size(239, 20)
-        Me.txtClassroom.TabIndex = 11
-        '
-        'txtEnrolments
-        '
-        Me.txtEnrolments.Location = New System.Drawing.Point(131, 171)
-        Me.txtEnrolments.Name = "txtEnrolments"
-        Me.txtEnrolments.Size = New System.Drawing.Size(239, 20)
-        Me.txtEnrolments.TabIndex = 12
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(26, 43)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(63, 13)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "Course ID : "
         '
         'GroupBox1
         '
@@ -356,14 +364,6 @@ Partial Class Course
         Me.Label14.Size = New System.Drawing.Size(63, 13)
         Me.Label14.TabIndex = 0
         Me.Label14.Text = "Course ID : "
-        '
-        'CourseList
-        '
-        Me.CourseList.FormattingEnabled = True
-        Me.CourseList.Location = New System.Drawing.Point(13, 22)
-        Me.CourseList.Name = "CourseList"
-        Me.CourseList.Size = New System.Drawing.Size(204, 186)
-        Me.CourseList.TabIndex = 0
         '
         'cmdSelect
         '
