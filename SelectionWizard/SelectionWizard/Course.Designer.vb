@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Course
+Partial Class CourseForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -410,7 +410,7 @@ Partial Class Course
         Me.cmdBack.Text = "Back to Main Menu"
         Me.cmdBack.UseVisualStyleBackColor = True
         '
-        'Course
+        'CourseForm
         '
         Me.AcceptButton = Me.cmdSelect
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -425,7 +425,7 @@ Partial Class Course
         Me.Controls.Add(Me.CourseInfoBox)
         Me.Controls.Add(Me.CourseBox)
         Me.Controls.Add(Me.NameBox)
-        Me.Name = "Course"
+        Me.Name = "CourseForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "CSE DEPT Course Form"
         Me.NameBox.ResumeLayout(False)

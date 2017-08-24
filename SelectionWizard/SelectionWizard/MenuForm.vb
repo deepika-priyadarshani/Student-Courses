@@ -7,4 +7,9 @@
         FacultyForm.Show()
         Me.Hide()
     End Sub
+
+    Private Sub cmdOpenCourseForm_Click(sender As Object, e As EventArgs) Handles cmdOpenCourseForm.Click
+        CourseForm.Show()
+        Me.Hide()
+    End Sub
 End Class
