@@ -23,27 +23,27 @@ Partial Class StudentForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.StudentNameBox = New System.Windows.Forms.GroupBox()
-        Me.StudentInfoBox = New System.Windows.Forms.GroupBox()
-        Me.CourseSelectedBox = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.ComboName = New System.Windows.Forms.ComboBox()
         Me.ComboMethod = New System.Windows.Forms.ComboBox()
-        Me.CourseList = New System.Windows.Forms.ListBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.txtID = New System.Windows.Forms.TextBox()
-        Me.txtName = New System.Windows.Forms.TextBox()
-        Me.txtYear = New System.Windows.Forms.TextBox()
-        Me.txtGPA = New System.Windows.Forms.TextBox()
-        Me.txtMajor = New System.Windows.Forms.TextBox()
-        Me.txtCredits = New System.Windows.Forms.TextBox()
+        Me.ComboName = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.StudentInfoBox = New System.Windows.Forms.GroupBox()
         Me.txtEmail = New System.Windows.Forms.TextBox()
+        Me.txtCredits = New System.Windows.Forms.TextBox()
+        Me.txtMajor = New System.Windows.Forms.TextBox()
+        Me.txtGPA = New System.Windows.Forms.TextBox()
+        Me.txtYear = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
+        Me.txtID = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.CourseSelectedBox = New System.Windows.Forms.GroupBox()
+        Me.CourseList = New System.Windows.Forms.ListBox()
         Me.Photobox = New System.Windows.Forms.PictureBox()
         Me.cmdSelect = New System.Windows.Forms.Button()
         Me.cmdInsert = New System.Windows.Forms.Button()
@@ -66,6 +66,40 @@ Partial Class StudentForm
         Me.StudentNameBox.TabIndex = 0
         Me.StudentNameBox.TabStop = False
         Me.StudentNameBox.Text = "Student Name and Method"
+        '
+        'ComboMethod
+        '
+        Me.ComboMethod.FormattingEnabled = True
+        Me.ComboMethod.Location = New System.Drawing.Point(134, 54)
+        Me.ComboMethod.Name = "ComboMethod"
+        Me.ComboMethod.Size = New System.Drawing.Size(172, 21)
+        Me.ComboMethod.TabIndex = 3
+        '
+        'ComboName
+        '
+        Me.ComboName.FormattingEnabled = True
+        Me.ComboName.Location = New System.Drawing.Point(134, 20)
+        Me.ComboName.Name = "ComboName"
+        Me.ComboName.Size = New System.Drawing.Size(172, 21)
+        Me.ComboName.TabIndex = 2
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(10, 58)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(74, 13)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Query Method"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(7, 24)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(75, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Student Name"
         '
         'StudentInfoBox
         '
@@ -90,111 +124,54 @@ Partial Class StudentForm
         Me.StudentInfoBox.TabStop = False
         Me.StudentInfoBox.Text = "Student Information"
         '
-        'CourseSelectedBox
+        'txtEmail
         '
-        Me.CourseSelectedBox.Controls.Add(Me.CourseList)
-        Me.CourseSelectedBox.Location = New System.Drawing.Point(369, 44)
-        Me.CourseSelectedBox.Name = "CourseSelectedBox"
-        Me.CourseSelectedBox.Size = New System.Drawing.Size(296, 127)
-        Me.CourseSelectedBox.TabIndex = 1
-        Me.CourseSelectedBox.TabStop = False
-        Me.CourseSelectedBox.Text = "Course Selected"
+        Me.txtEmail.Location = New System.Drawing.Point(98, 193)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(212, 20)
+        Me.txtEmail.TabIndex = 13
         '
-        'Label1
+        'txtCredits
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(7, 24)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(75, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Student Name"
+        Me.txtCredits.Location = New System.Drawing.Point(98, 163)
+        Me.txtCredits.Name = "txtCredits"
+        Me.txtCredits.Size = New System.Drawing.Size(212, 20)
+        Me.txtCredits.TabIndex = 12
         '
-        'Label2
+        'txtMajor
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(10, 58)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(74, 13)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Query Method"
+        Me.txtMajor.Location = New System.Drawing.Point(98, 133)
+        Me.txtMajor.Name = "txtMajor"
+        Me.txtMajor.Size = New System.Drawing.Size(212, 20)
+        Me.txtMajor.TabIndex = 11
         '
-        'ComboName
+        'txtGPA
         '
-        Me.ComboName.FormattingEnabled = True
-        Me.ComboName.Location = New System.Drawing.Point(134, 20)
-        Me.ComboName.Name = "ComboName"
-        Me.ComboName.Size = New System.Drawing.Size(172, 21)
-        Me.ComboName.TabIndex = 2
+        Me.txtGPA.Location = New System.Drawing.Point(98, 103)
+        Me.txtGPA.Name = "txtGPA"
+        Me.txtGPA.Size = New System.Drawing.Size(212, 20)
+        Me.txtGPA.TabIndex = 10
         '
-        'ComboMethod
+        'txtYear
         '
-        Me.ComboMethod.FormattingEnabled = True
-        Me.ComboMethod.Location = New System.Drawing.Point(134, 54)
-        Me.ComboMethod.Name = "ComboMethod"
-        Me.ComboMethod.Size = New System.Drawing.Size(172, 21)
-        Me.ComboMethod.TabIndex = 3
+        Me.txtYear.Location = New System.Drawing.Point(98, 73)
+        Me.txtYear.Name = "txtYear"
+        Me.txtYear.Size = New System.Drawing.Size(212, 20)
+        Me.txtYear.TabIndex = 9
         '
-        'CourseList
+        'txtName
         '
-        Me.CourseList.FormattingEnabled = True
-        Me.CourseList.Location = New System.Drawing.Point(6, 19)
-        Me.CourseList.Name = "CourseList"
-        Me.CourseList.Size = New System.Drawing.Size(284, 95)
-        Me.CourseList.TabIndex = 0
+        Me.txtName.Location = New System.Drawing.Point(98, 43)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(212, 20)
+        Me.txtName.TabIndex = 8
         '
-        'Label3
+        'txtID
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(7, 20)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(64, 13)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Student ID :"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(7, 78)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(71, 13)
-        Me.Label4.TabIndex = 1
-        Me.Label4.Text = "School Year :"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(7, 46)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(81, 13)
-        Me.Label5.TabIndex = 2
-        Me.Label5.Text = "Student Name :"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(7, 136)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(39, 13)
-        Me.Label6.TabIndex = 3
-        Me.Label6.Text = "Major :"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(7, 105)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(35, 13)
-        Me.Label7.TabIndex = 4
-        Me.Label7.Text = "GPA :"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(7, 166)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(45, 13)
-        Me.Label8.TabIndex = 5
-        Me.Label8.Text = "Credits :"
+        Me.txtID.Location = New System.Drawing.Point(98, 13)
+        Me.txtID.Name = "txtID"
+        Me.txtID.Size = New System.Drawing.Size(212, 20)
+        Me.txtID.TabIndex = 7
         '
         'Label9
         '
@@ -205,54 +182,77 @@ Partial Class StudentForm
         Me.Label9.TabIndex = 6
         Me.Label9.Text = "Email :"
         '
-        'txtID
+        'Label8
         '
-        Me.txtID.Location = New System.Drawing.Point(98, 13)
-        Me.txtID.Name = "txtID"
-        Me.txtID.Size = New System.Drawing.Size(212, 20)
-        Me.txtID.TabIndex = 7
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(7, 166)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(45, 13)
+        Me.Label8.TabIndex = 5
+        Me.Label8.Text = "Credits :"
         '
-        'txtName
+        'Label7
         '
-        Me.txtName.Location = New System.Drawing.Point(98, 43)
-        Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(212, 20)
-        Me.txtName.TabIndex = 8
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(7, 105)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(35, 13)
+        Me.Label7.TabIndex = 4
+        Me.Label7.Text = "GPA :"
         '
-        'txtYear
+        'Label6
         '
-        Me.txtYear.Location = New System.Drawing.Point(98, 73)
-        Me.txtYear.Name = "txtYear"
-        Me.txtYear.Size = New System.Drawing.Size(212, 20)
-        Me.txtYear.TabIndex = 9
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(7, 136)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(39, 13)
+        Me.Label6.TabIndex = 3
+        Me.Label6.Text = "Major :"
         '
-        'txtGPA
+        'Label5
         '
-        Me.txtGPA.Location = New System.Drawing.Point(98, 103)
-        Me.txtGPA.Name = "txtGPA"
-        Me.txtGPA.Size = New System.Drawing.Size(212, 20)
-        Me.txtGPA.TabIndex = 10
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(7, 46)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(81, 13)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = "Student Name :"
         '
-        'txtMajor
+        'Label4
         '
-        Me.txtMajor.Location = New System.Drawing.Point(98, 133)
-        Me.txtMajor.Name = "txtMajor"
-        Me.txtMajor.Size = New System.Drawing.Size(212, 20)
-        Me.txtMajor.TabIndex = 11
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(7, 78)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(71, 13)
+        Me.Label4.TabIndex = 1
+        Me.Label4.Text = "School Year :"
         '
-        'txtCredits
+        'Label3
         '
-        Me.txtCredits.Location = New System.Drawing.Point(98, 163)
-        Me.txtCredits.Name = "txtCredits"
-        Me.txtCredits.Size = New System.Drawing.Size(212, 20)
-        Me.txtCredits.TabIndex = 12
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(7, 20)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(64, 13)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "Student ID :"
         '
-        'txtEmail
+        'CourseSelectedBox
         '
-        Me.txtEmail.Location = New System.Drawing.Point(98, 193)
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(212, 20)
-        Me.txtEmail.TabIndex = 13
+        Me.CourseSelectedBox.Controls.Add(Me.CourseList)
+        Me.CourseSelectedBox.Location = New System.Drawing.Point(369, 44)
+        Me.CourseSelectedBox.Name = "CourseSelectedBox"
+        Me.CourseSelectedBox.Size = New System.Drawing.Size(296, 127)
+        Me.CourseSelectedBox.TabIndex = 1
+        Me.CourseSelectedBox.TabStop = False
+        Me.CourseSelectedBox.Text = "Course Selected"
+        '
+        'CourseList
+        '
+        Me.CourseList.FormattingEnabled = True
+        Me.CourseList.Location = New System.Drawing.Point(6, 19)
+        Me.CourseList.Name = "CourseList"
+        Me.CourseList.Size = New System.Drawing.Size(284, 95)
+        Me.CourseList.TabIndex = 0
         '
         'Photobox
         '

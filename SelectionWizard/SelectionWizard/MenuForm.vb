@@ -12,4 +12,9 @@
         CourseForm.Show()
         Me.Hide()
     End Sub
+
+    Private Sub cmdOpenStudentsForm_Click(sender As Object, e As EventArgs) Handles cmdOpenStudentsForm.Click
+        StudentForm.Show()
+        Me.Hide()
+    End Sub
 End Class
