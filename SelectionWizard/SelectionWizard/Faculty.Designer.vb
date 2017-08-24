@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Faculty
+Partial Class FacultyForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -26,25 +26,25 @@ Partial Class Faculty
         Me.txtImage = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.FacultyBox = New System.Windows.Forms.GroupBox()
-        Me.ComboMethod = New System.Windows.Forms.GroupBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.txtID = New System.Windows.Forms.TextBox()
-        Me.txtName = New System.Windows.Forms.TextBox()
-        Me.txtTitle = New System.Windows.Forms.TextBox()
-        Me.txtPhone = New System.Windows.Forms.TextBox()
-        Me.txtCollege = New System.Windows.Forms.TextBox()
-        Me.txtEmail = New System.Windows.Forms.TextBox()
-        Me.txtOffice = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ComboMethod = New System.Windows.Forms.GroupBox()
+        Me.txtOffice = New System.Windows.Forms.TextBox()
+        Me.txtEmail = New System.Windows.Forms.TextBox()
+        Me.txtCollege = New System.Windows.Forms.TextBox()
+        Me.txtPhone = New System.Windows.Forms.TextBox()
+        Me.txtTitle = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
+        Me.txtID = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.cmdSelect = New System.Windows.Forms.Button()
         Me.cmdInsert = New System.Windows.Forms.Button()
         Me.cmdUpdate = New System.Windows.Forms.Button()
@@ -92,6 +92,42 @@ Partial Class Faculty
         Me.FacultyBox.TabStop = False
         Me.FacultyBox.Text = "Faculty Name and Query Method"
         '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(11, 56)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(74, 13)
+        Me.Label10.TabIndex = 3
+        Me.Label10.Text = "Query Method"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(10, 29)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(72, 13)
+        Me.Label9.TabIndex = 2
+        Me.Label9.Text = "Faculty Name"
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(143, 56)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(175, 21)
+        Me.ComboBox2.TabIndex = 1
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(144, 29)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(175, 21)
+        Me.ComboBox1.TabIndex = 0
+        '
         'ComboMethod
         '
         Me.ComboMethod.Controls.Add(Me.txtOffice)
@@ -115,60 +151,54 @@ Partial Class Faculty
         Me.ComboMethod.TabStop = False
         Me.ComboMethod.Text = "Faculty Information"
         '
-        'Label2
+        'txtOffice
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(17, 22)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(61, 13)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Faculty ID :"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.txtOffice.Location = New System.Drawing.Point(142, 115)
+        Me.txtOffice.Name = "txtOffice"
+        Me.txtOffice.Size = New System.Drawing.Size(177, 20)
+        Me.txtOffice.TabIndex = 14
         '
-        'Label3
+        'txtEmail
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(17, 55)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(41, 13)
-        Me.Label3.TabIndex = 1
-        Me.Label3.Text = "Name :"
+        Me.txtEmail.Location = New System.Drawing.Point(142, 211)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(177, 20)
+        Me.txtEmail.TabIndex = 12
         '
-        'Label4
+        'txtCollege
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(17, 87)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(33, 13)
-        Me.Label4.TabIndex = 2
-        Me.Label4.Text = "Title :"
+        Me.txtCollege.Location = New System.Drawing.Point(142, 179)
+        Me.txtCollege.Name = "txtCollege"
+        Me.txtCollege.Size = New System.Drawing.Size(177, 20)
+        Me.txtCollege.TabIndex = 11
         '
-        'Label5
+        'txtPhone
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(17, 119)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(41, 13)
-        Me.Label5.TabIndex = 3
-        Me.Label5.Text = "Office :"
+        Me.txtPhone.Location = New System.Drawing.Point(142, 147)
+        Me.txtPhone.Name = "txtPhone"
+        Me.txtPhone.Size = New System.Drawing.Size(177, 20)
+        Me.txtPhone.TabIndex = 10
         '
-        'Label6
+        'txtTitle
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(17, 151)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(44, 13)
-        Me.Label6.TabIndex = 4
-        Me.Label6.Text = "Phone :"
+        Me.txtTitle.Location = New System.Drawing.Point(142, 83)
+        Me.txtTitle.Name = "txtTitle"
+        Me.txtTitle.Size = New System.Drawing.Size(177, 20)
+        Me.txtTitle.TabIndex = 9
         '
-        'Label7
+        'txtName
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(17, 183)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(48, 13)
-        Me.Label7.TabIndex = 5
-        Me.Label7.Text = "College :"
+        Me.txtName.Location = New System.Drawing.Point(142, 51)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(177, 20)
+        Me.txtName.TabIndex = 8
+        '
+        'txtID
+        '
+        Me.txtID.Location = New System.Drawing.Point(142, 18)
+        Me.txtID.Name = "txtID"
+        Me.txtID.Size = New System.Drawing.Size(177, 20)
+        Me.txtID.TabIndex = 7
         '
         'Label8
         '
@@ -179,90 +209,60 @@ Partial Class Faculty
         Me.Label8.TabIndex = 6
         Me.Label8.Text = "Email :"
         '
-        'txtID
+        'Label7
         '
-        Me.txtID.Location = New System.Drawing.Point(142, 18)
-        Me.txtID.Name = "txtID"
-        Me.txtID.Size = New System.Drawing.Size(177, 20)
-        Me.txtID.TabIndex = 7
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(17, 183)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(48, 13)
+        Me.Label7.TabIndex = 5
+        Me.Label7.Text = "College :"
         '
-        'txtName
+        'Label6
         '
-        Me.txtName.Location = New System.Drawing.Point(142, 51)
-        Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(177, 20)
-        Me.txtName.TabIndex = 8
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(17, 151)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(44, 13)
+        Me.Label6.TabIndex = 4
+        Me.Label6.Text = "Phone :"
         '
-        'txtTitle
+        'Label5
         '
-        Me.txtTitle.Location = New System.Drawing.Point(142, 83)
-        Me.txtTitle.Name = "txtTitle"
-        Me.txtTitle.Size = New System.Drawing.Size(177, 20)
-        Me.txtTitle.TabIndex = 9
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(17, 119)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(41, 13)
+        Me.Label5.TabIndex = 3
+        Me.Label5.Text = "Office :"
         '
-        'txtPhone
+        'Label4
         '
-        Me.txtPhone.Location = New System.Drawing.Point(142, 147)
-        Me.txtPhone.Name = "txtPhone"
-        Me.txtPhone.Size = New System.Drawing.Size(177, 20)
-        Me.txtPhone.TabIndex = 10
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(17, 87)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(33, 13)
+        Me.Label4.TabIndex = 2
+        Me.Label4.Text = "Title :"
         '
-        'txtCollege
+        'Label3
         '
-        Me.txtCollege.Location = New System.Drawing.Point(142, 179)
-        Me.txtCollege.Name = "txtCollege"
-        Me.txtCollege.Size = New System.Drawing.Size(177, 20)
-        Me.txtCollege.TabIndex = 11
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(17, 55)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(41, 13)
+        Me.Label3.TabIndex = 1
+        Me.Label3.Text = "Name :"
         '
-        'txtEmail
+        'Label2
         '
-        Me.txtEmail.Location = New System.Drawing.Point(142, 211)
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(177, 20)
-        Me.txtEmail.TabIndex = 12
-        '
-        'txtOffice
-        '
-        Me.txtOffice.Location = New System.Drawing.Point(142, 115)
-        Me.txtOffice.Name = "txtOffice"
-        Me.txtOffice.Size = New System.Drawing.Size(177, 20)
-        Me.txtOffice.TabIndex = 14
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(144, 29)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(175, 21)
-        Me.ComboBox1.TabIndex = 0
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(143, 56)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(175, 21)
-        Me.ComboBox2.TabIndex = 1
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(10, 29)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(72, 13)
-        Me.Label9.TabIndex = 2
-        Me.Label9.Text = "Faculty Name"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(11, 56)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(74, 13)
-        Me.Label10.TabIndex = 3
-        Me.Label10.Text = "Query Method"
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(17, 22)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(61, 13)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Faculty ID :"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'cmdSelect
         '
@@ -309,7 +309,7 @@ Partial Class Faculty
         Me.cmdBack.Text = "Back to Main Menu"
         Me.cmdBack.UseVisualStyleBackColor = True
         '
-        'Faculty
+        'FacultyForm
         '
         Me.AcceptButton = Me.cmdSelect
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -325,7 +325,7 @@ Partial Class Faculty
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.txtImage)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "Faculty"
+        Me.Name = "FacultyForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Faculty"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

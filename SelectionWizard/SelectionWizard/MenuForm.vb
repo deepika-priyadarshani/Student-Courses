@@ -4,6 +4,7 @@
     End Sub
 
     Private Sub cmdOpenFacultyForm_Click(sender As Object, e As EventArgs) Handles cmdOpenFacultyForm.Click
-
+        FacultyForm.Show()
+        Me.Hide()
     End Sub
 End Class
