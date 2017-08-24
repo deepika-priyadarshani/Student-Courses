@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Login
+Partial Class LoginForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -91,7 +91,7 @@ Partial Class Login
         Me.txtPassword.Size = New System.Drawing.Size(100, 20)
         Me.txtPassword.TabIndex = 4
         '
-        'Login
+        'LoginForm
         '
         Me.AcceptButton = Me.cmdOK
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -104,7 +104,7 @@ Partial Class Login
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "Login"
+        Me.Name = "LoginForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
         Me.ResumeLayout(False)

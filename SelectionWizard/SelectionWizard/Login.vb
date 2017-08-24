@@ -1,3 +1,3 @@
-﻿Public Class Login
+﻿Public Class LoginForm
 
 End Class
