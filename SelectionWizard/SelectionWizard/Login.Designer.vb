@@ -35,7 +35,7 @@ Partial Class LoginForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(17, 32)
+        Me.Label1.Location = New System.Drawing.Point(12, 21)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(327, 25)
         Me.Label1.TabIndex = 0
@@ -44,24 +44,24 @@ Partial Class LoginForm
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(19, 73)
+        Me.Label2.Location = New System.Drawing.Point(19, 77)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(60, 13)
+        Me.Label2.Size = New System.Drawing.Size(66, 13)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "User Name"
+        Me.Label2.Text = "User Name :"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(19, 105)
+        Me.Label3.Location = New System.Drawing.Point(19, 108)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(53, 13)
+        Me.Label3.Size = New System.Drawing.Size(59, 13)
         Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Password"
+        Me.Label3.Text = "Password :"
         '
         'cmdOK
         '
-        Me.cmdOK.Location = New System.Drawing.Point(54, 135)
+        Me.cmdOK.Location = New System.Drawing.Point(57, 151)
         Me.cmdOK.Name = "cmdOK"
         Me.cmdOK.Size = New System.Drawing.Size(75, 23)
         Me.cmdOK.TabIndex = 5
@@ -70,7 +70,7 @@ Partial Class LoginForm
         '
         'cmdCancel
         '
-        Me.cmdCancel.Location = New System.Drawing.Point(173, 135)
+        Me.cmdCancel.Location = New System.Drawing.Point(150, 151)
         Me.cmdCancel.Name = "cmdCancel"
         Me.cmdCancel.Size = New System.Drawing.Size(75, 23)
         Me.cmdCancel.TabIndex = 6
@@ -81,14 +81,14 @@ Partial Class LoginForm
         '
         Me.txtUserName.Location = New System.Drawing.Point(100, 73)
         Me.txtUserName.Name = "txtUserName"
-        Me.txtUserName.Size = New System.Drawing.Size(100, 20)
+        Me.txtUserName.Size = New System.Drawing.Size(147, 20)
         Me.txtUserName.TabIndex = 2
         '
         'txtPassword
         '
-        Me.txtPassword.Location = New System.Drawing.Point(100, 105)
+        Me.txtPassword.Location = New System.Drawing.Point(100, 104)
         Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(100, 20)
+        Me.txtPassword.Size = New System.Drawing.Size(147, 20)
         Me.txtPassword.TabIndex = 4
         '
         'LoginForm
@@ -96,7 +96,7 @@ Partial Class LoginForm
         Me.AcceptButton = Me.cmdOK
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(382, 261)
+        Me.ClientSize = New System.Drawing.Size(346, 209)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.txtUserName)
         Me.Controls.Add(Me.cmdCancel)
