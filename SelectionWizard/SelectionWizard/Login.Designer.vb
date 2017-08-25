@@ -22,6 +22,7 @@ Partial Class LoginForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -29,6 +30,11 @@ Partial Class LoginForm
         Me.cmdCancel = New System.Windows.Forms.Button()
         Me.txtUserName = New System.Windows.Forms.TextBox()
         Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.CSE_DEPTDataSet = New SelectionWizard.CSE_DEPTDataSet()
+        Me.LogInBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LogInTableAdapter = New SelectionWizard.CSE_DEPTDataSetTableAdapters.LogInTableAdapter()
+        CType(Me.CSE_DEPTDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LogInBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -79,6 +85,7 @@ Partial Class LoginForm
         '
         'txtUserName
         '
+        Me.txtUserName.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LogInBindingSource, "user_name", True))
         Me.txtUserName.Location = New System.Drawing.Point(100, 73)
         Me.txtUserName.Name = "txtUserName"
         Me.txtUserName.Size = New System.Drawing.Size(147, 20)
@@ -90,6 +97,20 @@ Partial Class LoginForm
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(147, 20)
         Me.txtPassword.TabIndex = 4
+        '
+        'CSE_DEPTDataSet
+        '
+        Me.CSE_DEPTDataSet.DataSetName = "CSE_DEPTDataSet"
+        Me.CSE_DEPTDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'LogInBindingSource
+        '
+        Me.LogInBindingSource.DataMember = "LogIn"
+        Me.LogInBindingSource.DataSource = Me.CSE_DEPTDataSet
+        '
+        'LogInTableAdapter
+        '
+        Me.LogInTableAdapter.ClearBeforeFill = True
         '
         'LoginForm
         '
@@ -107,6 +128,8 @@ Partial Class LoginForm
         Me.Name = "LoginForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
+        CType(Me.CSE_DEPTDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LogInBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -119,4 +142,7 @@ Partial Class LoginForm
     Friend WithEvents cmdCancel As Button
     Friend WithEvents txtUserName As TextBox
     Friend WithEvents txtPassword As TextBox
+    Friend WithEvents CSE_DEPTDataSet As CSE_DEPTDataSet
+    Friend WithEvents LogInBindingSource As BindingSource
+    Friend WithEvents LogInTableAdapter As CSE_DEPTDataSetTableAdapters.LogInTableAdapter
 End Class
