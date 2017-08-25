@@ -93,6 +93,7 @@ Partial Class LoginForm
         '
         'txtPassword
         '
+        Me.txtPassword.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LogInBindingSource, "pass_word", True))
         Me.txtPassword.Location = New System.Drawing.Point(100, 104)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(147, 20)
